@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Main Menu Translation
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+    <ion-col col-6 *ngFor="let translations of mainMenu.groupings">
+        <ion-item *ngFor="let translation of translations" class="menu-translation" (click)="openMenu(translation)">
+            {{translation.originalText}}
+            <ion-badge>
+              {{translation.translatedText}}
+            </ion-badge>
+          </ion-item>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

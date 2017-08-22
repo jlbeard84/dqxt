@@ -1,0 +1,1 @@
+export { MenuTranslationPage } from "./menu-translation/menu-translation.page"
