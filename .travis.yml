@@ -3,7 +3,7 @@ branches:
     - master
     - dev
 before_install:
-- npm install -g ionic@3.0.0 cordova@7.0.1
+- npm install -g ionic@3.9.2 cordova@7.0.1
 script: 
 - npm install
 - ionic cordova build browser
