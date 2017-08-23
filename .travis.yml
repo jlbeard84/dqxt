@@ -13,5 +13,9 @@ deploy:
   username: AZURE_WA_USERNAME
   password: AZURE_WA_PASSWORD
   site: AZURE_WA_SITE
+  file_glob: true
+  file: platforms/browser/www/*
+  skip_cleanup: true
+  overwrite: true
   #slot: azure_deployment_slotname       # (optional) If AZURE_WA_SLOT isn't set
   
