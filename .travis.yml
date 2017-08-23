@@ -7,4 +7,10 @@ before_install:
 script: 
 - npm install
 - ionic cordova build browser
+deploy:
+  provider: azure_web_apps
+  username: AZURE_WA_USERNAME
+  password: AZURE_WA_PASSWORD
+  site: AZURE_WA_SITE
+  #slot: azure_deployment_slotname       # (optional) If AZURE_WA_SLOT isn't set
   
