@@ -9,7 +9,8 @@ script:
 - ionic cordova build browser
 before_deploy:
 - rm .gitignore
-- git commit -a "deployment"
+- git rm .gitignore
+- git commit
 deploy:
   provider: azure_web_apps
   verbose: true
