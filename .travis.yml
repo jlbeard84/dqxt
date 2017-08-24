@@ -11,3 +11,5 @@ deploy:
   provider: script
   skip_cleanup: true
   script: deploy/travis-push.sh
+  on:
+    branch: dev
