@@ -9,7 +9,7 @@ setup_git() {
 commit_website_files() {
   echo "commit_website_files"
   git checkout -b pages
-  git add . platforms/browser/www
+  git add . $TRAVIS_BUILD_DIR/platforms/browser/www
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
