@@ -7,6 +7,7 @@ Base for a project to assist English speaking players with playing Dragon Quest 
 ## Usage
 
 Install dependencies:
+
     npm install -g ionic cordova
     npm install
 
