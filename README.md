@@ -1,4 +1,4 @@
-# ionic-cache-buster
+# dqxt
 
 [![Build Status](https://travis-ci.org/jlbeard84/dqxt.svg?branch=master)](https://travis-ci.org/jlbeard84/dqxt)
 
