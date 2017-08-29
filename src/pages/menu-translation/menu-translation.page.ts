@@ -10,6 +10,7 @@ import { MenuTranslation, MenuTranslationService, MenuType, TranslationGrouping 
 export class MenuTranslationPage {
 
   private mainMenu: TranslationGrouping;
+  private isLoading: boolean = true;
 
   constructor(
     private navController: NavController,
@@ -18,6 +19,7 @@ export class MenuTranslationPage {
 
     if (this.navParams && this.navParams.data && this.navParams.data.translationGrouping) {
       this.mainMenu = this.navParams.data.translationGrouping;
+      this.isLoading = false;
     } else {
       this.buildMainMenu();
     }
@@ -29,6 +31,7 @@ export class MenuTranslationPage {
     .getMenu(MenuType.MainMenu)
     .subscribe((menu: TranslationGrouping) => {
       this.mainMenu = menu;
+      this.isLoading = false;
     });
   }
 
