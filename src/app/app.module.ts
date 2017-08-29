@@ -6,6 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 
+import { HttpBaseUrlService, MenuTranslationService } from "../core";
+
 import * as Pages from "../pages";
 
 @NgModule({
@@ -25,6 +27,8 @@ import * as Pages from "../pages";
   providers: [
     StatusBar,
     SplashScreen,
+    HttpBaseUrlService,
+    MenuTranslationService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
