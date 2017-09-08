@@ -4,24 +4,22 @@ import { Observable } from "rxjs/Rx";
 
 import { 
     HttpBaseUrlService,
-    MenuType, 
-    TranslationGrouping 
+    MenuType
 } from "../";
 
-const apiRouteBase: string = "menu/";
-const mainMenuSuffix: string = "main-menu";
+const apiRouteBase: string = "menu-type/";
 
 @Injectable()
-export class MenuTranslationService {
+export class MenuTypeService {
 
     constructor(
         private http: Http,
         private httpBaseUrlService: HttpBaseUrlService) {   
     }
 
-    public getMenu(menuType: MenuType) : Observable<TranslationGrouping> {
+    public getMenuTypes() : Observable<MenuType[]> {
         
-        let url = `${this.httpBaseUrlService.getServiceBase()}${apiRouteBase}${menuType.menu}`;
+        const url = `${this.httpBaseUrlService.getServiceBase()}${apiRouteBase}`;
 
         return this
             .http

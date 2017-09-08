@@ -8,7 +8,7 @@ import * as Pages from '../pages';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = Pages.MenuTranslationPage;
+  rootPage:any = Pages.MenuIndexPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
