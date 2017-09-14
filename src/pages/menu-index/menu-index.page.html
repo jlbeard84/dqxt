@@ -1,13 +1,14 @@
 <ion-header>
-    <ion-navbar>
-      <ion-title>
-        Menu Translations
-      </ion-title>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Menu Translations</ion-title>
     </ion-navbar>
   </ion-header>
   
   <ion-content padding class="__menu-index">
-  
+
     <ion-spinner *ngIf="isLoading"></ion-spinner>
   
     <div class="menu-cards" *ngIf="!isLoading">
